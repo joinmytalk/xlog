@@ -1,7 +1,7 @@
 // Package xlog acts as a trivial extension of Go's log package.
 // It provides functions to prefix the logged output with different
 // log levels.
-package main
+package xlog
 
 import (
 	"log"
