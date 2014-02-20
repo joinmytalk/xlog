@@ -4,8 +4,13 @@
 package xlog
 
 import (
+	"io"
 	"log"
 )
+
+func SetOutput(w io.Writer) {
+	log.SetOutput(w)
+}
 
 func Debug(v ...interface{}) {
 	log.Print(append([]interface{}{"[DEBUG] "}, v...)...)
